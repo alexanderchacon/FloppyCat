@@ -3,12 +3,12 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-100</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,19 +25,24 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Create alarm and create pillars
-alarm[0] = 48;
-h = choose(108,72,90,128);
-instance_create( room_width + 32, h, obj_pillar_bottom);
-instance_create(room_width + 32, h-32, obj_score_up);
-instance_create( room_width + 32, h-64, obj_pillar_top );
+            <string>///Make text for the room menu
 
+draw_set_halign(fa_center);
+
+draw_text_color( x+1,y,"Press SPACE BAR to play",c_black,c_black,c_black,c_black,1 );
+draw_text_color( x-1,y,"Press SPACE BAR to play",c_black,c_black,c_black,c_black,1 );
+draw_text_color( x,y+1,"Press SPACE BAR to play",c_black,c_black,c_black,c_black,1 );
+draw_text_color( x,y-1,"Press SPACE BAR to play",c_black,c_black,c_black,c_black,1 );
+
+draw_text_color( x,y,"Press SPACE BAR to play",c_white,c_white,c_white,c_white,1 );
+
+draw_set_halign(fa_left);
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="0">
+    <event eventtype="9" enumb="32">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -54,13 +59,7 @@ instance_create( room_width + 32, h-64, obj_pillar_top );
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Set alarm
-alarm[0] = 48;
-h = choose(108,72,90,128);
-instance_create( room_width + 32, h, obj_pillar_bottom);
-instance_create(room_width + 32, h-32, obj_score_up);
-instance_create( room_width + 32, h-64, obj_pillar_top );
-
+            <string>room_goto_next();
 </string>
           </argument>
         </arguments>

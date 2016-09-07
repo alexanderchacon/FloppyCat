@@ -9,6 +9,7 @@
     <sprite>sprites\spr_cat</sprite>
     <sprite>sprites\spr_pillar_bottom</sprite>
     <sprite>sprites\spr_pillar_top</sprite>
+    <sprite>sprites\spr_score_up</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_mountains</background>
@@ -23,8 +24,12 @@
     <object>objects\obj_pillar_bottom</object>
     <object>objects\obj_pillar_top</object>
     <object>objects\obj_pillar_creator</object>
+    <object>objects\obj_game_start</object>
+    <object>objects\obj_score_up</object>
+    <object>objects\obj_score</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_menu</room>
     <room>rooms\rm_game</room>
   </rooms>
   <help>
