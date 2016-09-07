@@ -8,6 +8,31 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Define variable high score
+
+highscore = highscore_value(1);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,41 +50,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Make text for the room menu
+            <string>///Define text for high score
 
-draw_set_halign(fa_center);
+draw_text_color( x+1,y,"High score : " + string(highscore),c_black,c_black,c_black,c_black,1 );
+draw_text_color( x-1,y,"High score : " + string(highscore),c_black,c_black,c_black,c_black,1 );
+draw_text_color( x,y+1,"High score : " + string(highscore),c_black,c_black,c_black,c_black,1 );
+draw_text_color( x,y-1,"High score : " + string(highscore),c_black,c_black,c_black,c_black,1 );
 
-draw_text_transformed_colour(x+1,y,"Press SPACE BAR to play",0.65,0.65,0,c_black,c_black,c_black,c_black,1);
-draw_text_transformed_colour(x-1,y,"Press SPACE BAR to play",0.65,0.65,0,c_black,c_black,c_black,c_black,1);
-draw_text_transformed_colour(x,y+1,"Press SPACE BAR to play",0.65,0.65,0,c_black,c_black,c_black,c_black,1);
-draw_text_transformed_colour(x,y-1,"Press SPACE BAR to play",0.65,0.65,0,c_black,c_black,c_black,c_black,1);
+draw_text_color( x,y,"High score : " + string(highscore),c_white,c_white,c_white,c_white,1 );
 
-draw_text_transformed_colour(x,y,"Press SPACE BAR to play",0.65,0.65,0,c_white,c_white,c_white,c_white,1);
-
-draw_set_halign(fa_left);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="32">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>room_goto_next();
 </string>
           </argument>
         </arguments>

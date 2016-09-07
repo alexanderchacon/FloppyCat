@@ -10,6 +10,7 @@
     <sprite>sprites\spr_pillar_bottom</sprite>
     <sprite>sprites\spr_pillar_top</sprite>
     <sprite>sprites\spr_score_up</sprite>
+    <sprite>sprites\spr_title</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bk_mountains</background>
@@ -27,6 +28,8 @@
     <object>objects\obj_game_start</object>
     <object>objects\obj_score_up</object>
     <object>objects\obj_score</object>
+    <object>objects\obj_highscore</object>
+    <object>objects\obj_title</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
