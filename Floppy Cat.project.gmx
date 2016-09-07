@@ -15,8 +15,14 @@
     <background>background\bk_grass</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_gameover.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_cat</object>
+    <object>objects\obj_pillar_bottom</object>
+    <object>objects\obj_pillar_top</object>
+    <object>objects\obj_pillar_creator</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game</room>
