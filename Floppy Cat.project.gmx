@@ -4,7 +4,11 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_up</sound>
+    <sound>sound\snd_die</sound>
+    <sound>sound\snd_background</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_cat</sprite>
     <sprite>sprites\spr_pillar_bottom</sprite>
@@ -30,6 +34,7 @@
     <object>objects\obj_score</object>
     <object>objects\obj_highscore</object>
     <object>objects\obj_title</object>
+    <object>objects\obj_music</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>

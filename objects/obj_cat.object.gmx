@@ -206,6 +206,10 @@ with(other) instance_destroy();
           <argument>
             <kind>1</kind>
             <string>///Set jump in gravity
+
+audio_destroy_stream(snd_up);
+audio_play_sound(snd_up,10,false);
+
 vspeed = -4;
 </string>
           </argument>
